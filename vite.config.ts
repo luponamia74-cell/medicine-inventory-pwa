@@ -1,0 +1,2 @@
+import { defineConfig } from 'vite'; import react from '@vitejs/plugin-react'; import { VitePWA } from 'vite-plugin-pwa';
+export default defineConfig({plugins:[react(),VitePWA({registerType:'autoUpdate',manifest:{name:'薬・サプリ在庫管理',short_name:'薬在庫',theme_color:'#166534',background_color:'#f7faf7',display:'standalone',lang:'ja',icons:[{src:'icon.svg',sizes:'any',type:'image/svg+xml',purpose:'any'}]}})]});
